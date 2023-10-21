@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur</title>
     <style>
-        table,td{
+        table,td,th{
             border: solid black 1px;
             border-collapse: collapse;
             padding: 3px;
@@ -19,12 +19,20 @@
 <body>
     <h2>Tabelas</h2>
 
-    <table>
+    <table style="width: 100%;">
+        <caption>Tabelas</caption>
         <tr>
+            <th>Cabeçalho</th>
+            <th style="width: 70%;">Cabeçalho</th>
+            <th>Cabeçalho</th>
+        </tr>
+        <tr>
+            <td>Conteudo</td>
             <td>Conteudo</td>
             <td>Conteudo</td>
         </tr>
-        <tr>
+        <tr style="height: 200px;">
+            <td>Conteudo</td>
             <td>Conteudo</td>
             <td>Conteudo</td>
         </tr>
