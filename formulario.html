@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur</title>
 </head>
+
 <body>
     <h2>Formulario</h2>
     <form action="#">
@@ -15,10 +17,10 @@
         <label for="sobrenome">Sobrenome:</label><br>
         <input type="text" id="sobrenome" name="sobrenome">
         <br><br>
-        
+
         <input type="radio" id="html" name="tecnologias" value="HTML">
         <label for="html">HTML</label><br>
-        
+
         <input type="radio" id="css" name="tecnologias" value="css">
         <label for="css">CSS</label><br>
 
@@ -58,18 +60,74 @@
         <label for="niver">Aniversario</label>
         <input type="date" id="niver" name="niver">
 
+        <fieldset>
+            <legend>Dados de data</legend>
+            <label for="">Data maxima limite</label><br>
+            <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+        </fieldset>
+        <br><br>
+        <label for="dataMin">Data minima limite</label><br>
+        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">
+
+        <br><br>
+        <label for="arquivo">Selecione seu arquivo: </label>
+        <input type="file" name="arquivo" id="arquivo">
+
+        <br><br>
+        <label for="feria">Mes de ferias</label><br>
+        <input type="month" id="ferias" name="ferias">
+
+        <br><br>
+        <label for="Viagem">Semana da viagem</label><br>
+        <input type="week" id="viagem" name="viagem">
+
+        <br><br>
+        <label for="qtd-pedido">Quantidade do pedido</label><br>
+        <input type="number" id="qtd-pedido" name="qtd-pedido">
+
+        <br><br>
+        <label for="fluencia">Fluencia em ingles</label><br>
+        <input type="range" id="fluencia" name="fluencia" min="0" max="100">
+
+        <br><br>
+        <label for="disciplinas">Selecione uma disciplina</label><br>
+        <select name="disciplinas" id="disciplinas">
+            <option value="LA1">Logica de programacao</option>
+            <option value="LAA">Logica avancada</option>
+            <option value="HT5">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="WJJ">JavaScript</option>
+        </select>
+        <br><br>
+
+        <label for="observacao">Observacao</label><br>
+        <textarea name="observacao" id="observacao" cols="30" rows="10"></textarea>
+
+        <br><br>
+        <label for="cidade">Cidade</label>
+        <input type="text" list="cidades" name="cidade">
+        <datalist id="cidades">
+            <option value="Blumenau">
+            <option value="Gaspar">
+            <option value="Brusque">
+            <option value="Navegantes">
+            <option value="Balnéario Camboriú">
+            <option value="Taió">
+            <option value="Indaial">
+            <option value="Timbó">
+        </datalist>
+
+
         <br><br>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
         <input type="button" value="Exibir alerta" onclick="alert('Hello word')">
 
-        <br><br>
-        <label for="">Data maxima limite</label><br>
-        <input type="date" name="dataMax" id="dataMax" max="2023-10-31">
+        
+        
 
-        <br><br>
-        <label for="dataMin">Data minima limite</label><br>
-        <input type="date" name="dataMin" id="dataMin" min="2023-10-01">
+
     </form>
 </body>
+
 </html>
