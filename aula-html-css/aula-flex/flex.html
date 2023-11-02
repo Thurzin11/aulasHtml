@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            padding: 10px;
+        }
+        .flex-container{
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+        }
+        .flex-container div{
+            display: flex;
+            background-color: black;
+            color: aliceblue;
+            margin: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo de FlexBox  </h2>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
