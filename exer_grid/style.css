@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cabecalho{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.conteudo-principal{
+    background-color: blueviolet;
+    color: black;
+}
+.conteudo-secundario{
+    background-color: blueviolet;
+    color: black;
+    border: rgb(255, 255, 255) 3px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.formacao{
+    text-align: justify;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.formacao-experiencia{
+    display: flex;
+    justify-content: center;
+    border: rgb(255, 255, 255) 3px solid;
+    border-radius: 5px;
+}
+.formacao, .experiencia{
+    margin: 5px;
+    padding: 5px;
+}
+.hobbies ul{
+    list-style-type: none;
+}
+.formacao ul{
+    list-style-type: none;
+}
+.experiencia ul{
+    list-style-type: none;
+}

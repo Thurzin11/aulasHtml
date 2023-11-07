@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur</title>
+    <style>
+        @keyframes mudar-cor {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: blue;
+                width: 800px;
+            }
+        }
+        @keyframes multicolor {
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: black;
+            }
+            50%{
+                background-color: purple;
+            }
+            75%{
+                background-color: white;
+            }
+            100%{
+                background-color: crimson;
+            }
+        }
+        .divA{
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+        }
+        .divA:hover{
+            animation: mudar-cor;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .divB{
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            animation-name: multicolor;
+        }
+        .divB:hover{
+            animation-name: multicolor;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo com Animation '@keyframe'</h2>
+    <div class="divA"></div>
+    <div class="divB"></div>
+</body>
+</html>
