@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur</title>
+</head>
+<style>
+    .divA p:first-child {
+        color: blue;
+    }
+    .divB p:nth-child(3){
+        background-color: black;
+        color: yellow;
+        /*
+        odd e even pares e impares
+        */
+    }
+    .divC p:nth-child(3n+0){
+        background-color: tomato;
+        padding: 5px;
+        text-align: center;
+    }
+    .divD::first-line{
+        background-color: black;
+        color: white;
+    }
+    .divE::first-letter{
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <h2>Trablhando com pseudo-classes</h2>
+    <h3>:first-child</h3>
+    <div class="divA">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+    </div>
+    <h3>:nth-child</h3>
+    <div class="divB">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+    </div>
+    <h3>:nth-child(3n+0)</h3>
+    <div class="divC">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, iure.</p>
+    </div>
+    <h3>Pseudo-Classes first-line</h3>
+    <div class="divD">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore ab quibusdam doloremque, esse totam consequatur aliquid obcaecati eos cupiditate?</p>
+    </div>
+    <h3>Pseudo-Classes first-letter</h3>
+    <div class="divE">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore ab quibusdam doloremque, esse totam consequatur aliquid obcaecati eos cupiditate?</p>
+    </div>
+</body>
+
+</html>
